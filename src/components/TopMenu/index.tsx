@@ -1,6 +1,7 @@
 import { VscChevronLeft, VscChevronRight } from "react-icons/vsc"
 import { TopMenuContainer } from "./styles"
-import { FaEllipsisH } from "react-icons/fa";
+import { FaEllipsisH, FaUsers } from "react-icons/fa";
+import { BsBell } from "react-icons/bs";
 
 export const TopMenu = () => {
 
@@ -31,9 +32,15 @@ export const TopMenu = () => {
         </span>
       </div>
       <div>
-        <span>Bell</span>
-        <span>Community</span>
-        <span>Profile</span>
+        <button>
+          <BsBell size={24} />
+        </button>
+        <button>
+          <FaUsers size={24} />
+        </button>
+        <button>
+          <img src="src/assets/eu3.jpeg" alt="Profile" />
+        </button>
       </div>
     </TopMenuContainer>
   )
